@@ -19,5 +19,8 @@
   "author": "Facundo Arias <facundolautaroarias@hotmail.com>",
   "devDependencies": {
     "process": "^0.11.10"
+  },
+  "engines": {
+    "node": "14.17.6"
   }
 }
