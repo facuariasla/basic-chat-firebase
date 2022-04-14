@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+input, button, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  height: 50px;
+  background-color: #4F091D;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.data-container{
+  display: grid;
+  padding: 10px;
+  background-color: #F5EEDC;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+}
+.formulario{
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+}
+@media (min-width: 768px){
+  .formulario{
+    width: 600px;
+  }
+}
+
+.formulario div {
+  display: grid;
+  padding: 10px 0px;
+}
+
+.formulario div input {
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid grey;
+}
+
+.chat-btn{
+  margin-top: 10px;
+  height: 50px;
+  width: 50%;
+  justify-self: center;
+  font-size: 18px;
+  border: none;
+  background-color: #DD4A48;
+  color: #fff;
+}
+.chat-btn::after{
+  background-color: #fa4e4b;
+}
+.chat-btn:hover{
+  background-color: #ff8b89;
+
+}
+
+.messages-content{
+  width: 90vw;
+  height: 43vh;
+  background-color: #97BFB4;
+  display: flex;
+  justify-self: center;
+  margin-top: 30px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+
+ul{
+  display:table;
+}
+
+li{
+  display:block;
+  padding: 2px;
+  width: 80vw;
+  /* overflow:auto; */
+  word-break:break-all;
+}

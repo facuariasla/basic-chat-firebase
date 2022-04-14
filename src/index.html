@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat 1.0</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./index.ts" defer type="module"></script>
+  <script src="./form-control.ts" defer type="module"></script>
+</head>
+<body>
+  <main class="root">
+    <header class="header">Chat 1.0 - Rt-DB-Firestore</header>
+
+    <div class="data-container">
+
+      
+      <div class="messages-content" id="messages-content">
+        <ul id="messages">
+        </ul>
+      </div>
+
+<!-- FORMULARIO ABAJO -->
+
+      <div class="form-container">
+        <form action="" class="formulario" autocomplete="off">
+          
+          <div class="name-container">
+            <label for="">Nombre</label>
+            <input required type="text" id="nombre">
+          </div>
+
+          <div class="message-container">
+            <label for="">Mensaje</label>
+            <input required type="text" id="chat-txt" maxlength="141">
+          </div>
+
+          <button class="chat-btn" type="submit">Enviar</button>
+        </form>
+      </div>
+
+    </div>
+
+   <!-- Para perfeccionarlo, se pueden poner el formulario abajo de la caja de mensajes y que el div que contiene los mensajes sea scrolleable con un height determinado-->
+
+    <footer class="footer"></footer>
+  </main>
+</body>
+</html>
