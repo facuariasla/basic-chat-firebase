@@ -13,5 +13,11 @@
     "build:front": "parcel build ./src/index.html",
     "build:api": "tsc ./src/form-control.ts",
     "build": "yarn build:front && yarn build:api"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:facuariasla/basic-chat-firebase.git",
+  "author": "Facundo Arias <facundolautaroarias@hotmail.com>",
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }
