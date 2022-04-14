@@ -12,7 +12,8 @@
     "dev": "parcel serve ./src/index.html",
     "build:front": "parcel build ./src/index.html",
     "build:api": "tsc ./src/form-control.ts",
-    "build": "yarn build:front && yarn build:api"
+    "build:index": "tsc ./src/index.ts",
+    "build": "yarn build:front && yarn build:api && yarn build:index"
   },
   "repository": "git@github.com:facuariasla/basic-chat-firebase.git",
   "author": "Facundo Arias <facundolautaroarias@hotmail.com>",
