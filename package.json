@@ -4,14 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^17.0.8",
     "firebase": "8.7.1",
-    "parcel": "^2.0.0-rc.0"
+    "parcel": "^2.0.0-rc.0",
+    "typescript": "^4.5.4"
   },
   "scripts": {
     "dev": "parcel serve ./src/index.html",
     "build:front": "parcel build ./src/index.html",
     "build:api": "tsc ./src/form-control.ts",
     "build": "yarn build:front && yarn build:api"
-
   }
 }
